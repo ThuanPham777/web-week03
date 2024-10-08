@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Landing Page</title>
+    <link rel="stylesheet" href="./default.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBlack: '#2e2e2e',
+                        lightBlack: '#111827',
+                        lightGray: '#fcfcfc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white py-8 px-6 shadow-sm border-b border-gray-300">
+        <div class="mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-6">
+            <!-- Logo and title section -->
+            <div class="flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-center text-center md:text-left">
+                <div>
+                    <img src="./img/target_header.jpg" alt="Target Logo" class="w-24 md:w-auto">
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                    <h1 class="text-2xl md:text-3xl font-bold text-red-500">Target</h1>
+                    <p class="text-gray-500 text-sm md:text-base">Premium landing page templates</p>
+                </div>
+            </div>
+
+            <!-- Call Now button -->
+            <div class="text-red-500 text-base md:text-lg font-semibold mt-2 md:mt-0 text-center md:text-right">
+                Call Now! <span class="block md:inline">1-800-123-456</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-lightGray py-12 px-8 grid grid-cols-1 md:grid-cols-2 place-items-center gap-10 border-b border-gray-300">
+        <div class="px-6 space-y-4 md:space-y-8 text-center md:text-left">
+            <h1 class="text-2xl md:text-4xl font-bold mb-4">The perfect way to convert your traffic into sales</h1>
+            <p class="text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p class="text-gray-500 mb-6">Epsum factoral non deposit quid pro quo hic escorol, Olypian quamets et gorilla conglobum sic ad auseum.</p>
+            <div class="flex flex-col md:flex-row items-center md:space-x-4 mb-6 space-y-4 md:space-y-0">
+                <button class="bg-orange-500 text-lg text-white px-6 py-2 rounded-3xl shadow-lg hover:opacity-80">Purchase now!</button>
+                <p>or</p>
+                <button class="bg-gray-300 text-lg border border-gray-300 text-gray-600 px-6 py-2 rounded-3xl shadow-lg hover:opacity-80">Take a tour</button>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="./img/left-arrow.jpg" alt="Left Arrow"
+                class="md:w-12 md:h-12 w-8 h-8 absolute top-1/2 transform -translate-y-1/2 md:-left-6 -left-4">
+            <img src="./img/hero_img.jpg" alt="Slider Image" class="w-full max-w-4xl mx-auto">
+            <img src="./img/right-arrow.jpg" alt="Right Arrow"
+                class="md:w-12 md:h-12 w-8 h-8 absolute top-1/2 transform -translate-y-1/2 md:-right-6 -right-4">
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white py-12 px-8 border-b border-gray-300">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
+            <!-- Feature 1 -->
+            <div class="p-6 flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-8">
+                <img src="./img/quickandeasy.png" alt="Quick and easy" class="w-32 md:w-64 h-24">
+                <div class="text-left mt-4 md:mt-0">
+                    <h3 class="text-xl font-semibold mb-2">Quick and easy</h3>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-6 flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-8">
+                <img src="./img/lessricky.png" alt="Less risky" class="w-32 md:w-64 h-24">
+                <div class="text-left mt-4 md:mt-0">
+                    <h3 class="text-xl font-semibold mb-2">Less risky</h3>
+                    <p class="text-gray-500">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-6 flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-8">
+                <img src="./img/optimized.png" alt="Optimized" class="w-32 md:w-64 h-24">
+                <div class="text-left mt-4 md:mt-0">
+                    <h3 class="text-xl font-semibold mb-2">Optimized</h3>
+                    <p class="text-gray-500">Epsum factorial non deposit quid pro quo hic escoral, Olypian quarrels et gorilla
+                        conglobum sic ad nauseam. Souvlaki ignitus carborundum e plumbus unum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Check out the Features Section -->
+    <section class="mx-auto py-12 px-16 border-b border-gray-300">
+        <div class="flex mb-4">
+            <h2 class="text-2xl font-bold">Check out the features</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <!-- Left Text Section -->
+            <div class="space-y-4">
+                <p class="text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing et, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Epsum factorial non deposit quid pro
+                    quo hic escorol. Olympian quarrels et gorilla congolium sic ad nauseum.
+                    <br>
+                    Epsum factorial non deposit quid pro quo hic escorol. Olympian quarrels et gorilla congolium
+                    sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay
+                    atinlay. Marquee selectus non provisio incongruous feline nolo contendere. Gratuitous
+                    octopus niacin, sodium glutamate.
+                </p>
+            </div>
+
+            <!-- Right List Section -->
+            <div class="space-y-4">
+                <ul class="space-y-4">
+                    <li class="flex items-center border-b border-gray-300 pb-2 w-full">
+                        <img src="./img/chevron.png" alt="chevron" class="w-4 h-4">
+                        <span class="text-red-500 flex-1 ml-2">Lorem ipsum dolor sit amet</span>
+                    </li>
+                    <li class="flex items-center border-b border-gray-300 pb-2 w-full">
+                        <img src="./img/chevron.png" alt="chevron" class="w-4 h-4">
+                        <span class="text-red-500  flex-1 ml-2">Consectetuer adipiscing elit sed diam</span>
+                    </li>
+                    <li class="flex items-center border-b border-gray-300 pb-2 w-full">
+                        <img src="./img/chevron.png" alt="chevron" class="w-4 h-4">
+                        <span class="text-red-500  flex-1 ml-2">Nibh euismod tincidunt ut</span>
+                    </li>
+                    <li class="flex items-center pb-2 w-full">
+                        <img src="./img/chevron.png" alt="chevron" class="w-4 h-4">
+                        <span class="text-red-500 flex-1 ml-2">Laoreet dolore magna aliquam erat</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="py-12 px-16 bg-white border-b border-gray-300">
+        <div>
+            <h2 class="text-2xl font-bold mb-6">The screenshots</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
+            <img src="./img/screenshot1.png" alt="Screenshot 1" class="w-full h-auto">
+            <img src="./img/hero_img.jpg" alt="Screenshot 2" class="w-full h-auto">
+            <img src="./img/hero_img.jpg" alt="Screenshot 3" class="w-full h-auto">
+            <img src="./img/hero_img.jpg" alt="Screenshot 4" class="w-full h-auto">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-12 px-12 space-y-8 border-b">
+        <div class="mx-auto px-6">
+            <h2 class="text-xl font-semibold mb-6 text-gray-700">See what our customers are saying...</h2>
+            <div class="relative bg-white p-6 shadow-lg rounded-lg border">
+                <p class="italic text-center text-gray-500 text-xl mb-4">
+                    "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+                    sport etc, li tot Europa usa li sam vocabularium."
+                </p>
+            </div>
+        </div>
+        <div class="mx-auto px-6 flex items-center mt-4">
+            <span class="font-semibold text-gray-700">Mike Tyson,</span>
+            <span class="text-gray-500 ml-1 italic">Microsoft</span>
+        </div>
+        <div class="flex justify-center items-center space-x-4 mb-6">
+            <button class="bg-orange-500 md:text-lg text-white px-6 py-2 rounded-3xl shadow-lg hover:opacity-80">Purchase now!</button>
+            <p>or</p>
+            <button class="bg-gray-300 md:text-lg border border-gray-300 text-gray-600 px-6 py-2 rounded-3xl shadow-lg hover:opacity-80">Take a
+                tour</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="py-12 px-16 bg-darkBlack py-12 px-10 text-gray-400">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+                <!-- Payment Method Section -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Payment method</h3>
+                    <p class="mb-4">Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues.
+                    Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.</p>
+                    <div class="flex justify-center md:justify-start space-x-3">
+                        <img src="./img/mastercard.png" alt="MasterCard" class="w-12">
+                        <img src="./img/election.png" alt="Visa" class="w-12">
+                        <img src="./img/paypal.png" alt="PayPal" class="w-12">
+                    </div>
+                </div>
+
+                <!-- Get In Touch Section -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Get in touch</h3>
+                    <p>123 Main Street #3</p>
+                    <p>San Francisco, CA, 94101</p>
+                    <p>Phone: (866) 123-4567 ext#1</p>
+                    <p>FAX: (866) 123-0000</p>
+                    <p>Email: <a href="mailto:webdesign@shegy.pl">webdesign@shegy.pl</a></p>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Design details</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+                <div>
+                    <img src="./img/target.png" alt="target Logo">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Bottom Bar -->
+        <div class="py-6 px-12 px-16 flex justify-between flex-col md:flex-row bg-lightBlack text-gray-400 gap-8">
+            <div class="flex justify-between items-center">
+                <p>Copyright &copy; 2011 Target. All rights reserved. Design by <span class="text-orange-500">Shegy</span></p>
+            </div>
+            <div class="flex space-x-4 text-gray-400">
+                <a href="#"
+                    class="bg-gray-800 rounded-full hover:text-white hover:bg-gray-700 flex items-center justify-center w-8 h-8">
+                    <i class="fas fa-mountain"></i>
+                </a>
+                <a href="#"
+                    class="bg-gray-800 rounded-full hover:text-white hover:bg-gray-700 flex items-center justify-center w-8 h-8">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#"
+                    class="bg-gray-800 rounded-full hover:text-white hover:bg-gray-700 flex items-center justify-center w-8 h-8">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#"
+                    class="bg-gray-800 rounded-full hover:text-white hover:bg-gray-700 flex items-center justify-center w-8 h-8">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#"
+                    class="bg-gray-800 rounded-full hover:text-white hover:bg-gray-700 flex items-center justify-center w-8 h-8">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#"
+                    class="bg-gray-800 rounded-full hover:text-white hover:bg-gray-700 flex items-center justify-center w-8 h-8">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#"
+                    class="bg-gray-800 rounded-full hover:text-white hover:bg-gray-700 flex items-center justify-center w-8 h-8">
+                    <i class="fas fa-rss"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
